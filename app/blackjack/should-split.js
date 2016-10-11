@@ -3,6 +3,6 @@ export default function (card1, card2) {
     return true;
   }
   else {
-    return false;oidshf;oiaghoifg oij fiosadj giohafoig;
+    return false;
   }
 }
