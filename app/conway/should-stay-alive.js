@@ -1,7 +1,9 @@
 import aliveNeighbors from './alive-neighbors';
-
+let alive = 0;
 export default function shouldStayAlive(neighbors) {
-  for (let i = 0; i < neighbors.length; i++)
-    if (neighbors[i] >= 2)
-      return true;
+  if (aliveNeighbors[neighbors] >= 3) {
+    return true;
+  }
+
+  return alive;
 }
