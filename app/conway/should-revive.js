@@ -1,12 +1,5 @@
 import aliveNeighbors from './alive-neighbors';
 
 export default function shouldStayAlive(neighbors) {
-  if (aliveNeighbors(neighbors) > 3) {
-    return false;
-  }
-  if (aliveNeighbors(neighbors) < 2) {
-    return false;
-  } else {
-    return true;
-  }
+  return aliveNeighbors(neighbors) === 3;
 }

@@ -9,7 +9,7 @@ test('A cell knows the rules if it\'s dead', (assert) => {
   const d = reviveEh([true, true, true, false, true, false, false, false]);
 
   assert.equal(a, false, 'A cell does not revive if it has no living neighbors');
-  assert.equal(b, false, 'A cell does not revive with one living neighbor');
+  assert.equal(b, false, 'A cell does not revive with two living neighbors');
   assert.equal(c, true, 'A cell revives with a little help from 3 of its friends');
   assert.equal(d, false, 'A cell does not revive with 4 living neighbors');
 });
